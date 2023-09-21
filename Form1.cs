@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ITEC140_A02
 {
-    [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
+   
     public partial class Form1 : Form
     {
-        int decTax = 0;
-        int decTotalWithTax = 0;
-        int decTotal = 0;
+        decimal decTax = 0;
+        decimal decTotalWithTax = 0;
+        decimal decTotal = 0;
         public Form1()
         {
             InitializeComponent();
@@ -39,18 +39,20 @@ namespace ITEC140_A02
 
         private void btnPizza_Click(object sender, EventArgs e)
         {
-            decTotal = decTotal = decimal = 1.99m;
-            btnTotal = btnTotal.ToString();
+            decTotal = decTotal + 1.99m;
+          
         }
 
         private void lblTotal_Click(object sender, EventArgs e)
         {
-            lblTotal=decTotal.ToString();
+            
         }
 
         private void btnTotal_Click(object sender, EventArgs e)
         {
 
-        }
+          }
 
-   
+     
+    }
+}
